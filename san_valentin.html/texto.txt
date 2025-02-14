@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín, mi amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?night,flowers') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            color: black;
+            display: none;
+        }
+        h1 {
+            color: #d10000;
+        }
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showCard() {
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('card').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="welcome" class="welcome" onclick="showCard()">
+            Haz clic para entrar
+        </div>
+        <div id="card" class="card">
+            <h1>Feliz San Valentín, mi amor</h1>
+            <p>Mi amor,</p>
+            <p>No sé bien por dónde empezar porque con vos todo es tan fácil, tan natural, que hasta las palabras se quedan cortas. Pero hay algo que tengo clarísimo: sos lo mejor que me pasó en la vida.</p>
+            <p>Desde que te conocí, todo cambió. No es solo que me hacés feliz, es que me hacés sentir en casa, como si el mundo entero se ordenara cuando estoy con vos. Con vos no hay dudas, no hay miedos, solo certezas. Y la certeza más grande es que quiero que estemos juntos siempre.</p>
+            <p>Me hacés reír cuando más lo necesito, me bancás en mis días complicados y me llenás de paz cuando el mundo parece un quilombo. No sé cómo hacés, pero con una mirada tuya, todo tiene sentido.</p>
+            <p>Gracias por ser vos, por todo lo que me das sin que siquiera lo pida, por hacerme sentir que, pase lo que pase, mientras estés a mi lado, todo va a estar bien.</p>
+            <p>Te amo con todo lo que soy, con cada parte de mí. Y no hay un solo día en que no agradezca tenerte en mi vida.</p>
+        </div>
+    </div>
+</body>
+</html>
